@@ -89,7 +89,7 @@ DATABASES = {
     'HOST': '127.0.0.1',
     'PORT': '3306',
     'USER': 'root',
-    'PASSWORD': 'pleaseUseyourpassword',
+    'PASSWORD': 'engineer6.7',
 }}
 
 # Password validation
@@ -129,9 +129,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+
